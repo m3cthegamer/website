@@ -70,7 +70,7 @@
                                     <li class="nav-item">
                                         <a class="dropdown-item nav-link" href="./team.html">Takımımız</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li  class="nav-item">
                                         <a class="dropdown-item nav-link" href="./faq.html">S.S.S</a>
                                     </li>
                                 </ul>
@@ -82,6 +82,9 @@
                         if (!isset($_COOKIE ['user'])) {
                                     echo '<a class="nav-link" id="loginButton" type="button" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#loginModal">Oturum Aç</a>';
                                 }
+                                if (isset($_COOKIE ['user'])) {
+                                    echo '<a class="nav-link" id="logoutButton" type="button" class="btn btn-primary py-3 px-4" href="javascript:void(0);" onclick="logout()">Çıkış</a>';
+                                }        
                                 ?>
                         </li>
                         <li class="nav-item">
@@ -706,13 +709,10 @@
             <div class="form-group d-md-flex">
                 <div class="form-check w-50">
                     <label class="custom-control fill-checkbox">
-                        <input type="checkbox" class="fill-control-input">
-                        <span class="fill-control-indicator"></span>
-                        <span class="fill-control-description">Beni Hatırla</span>
                     </label>
                 </div>
                 <div class="w-50 text-md-right">
-                    <a href="#">Şifremi Unuttum</a>
+                <a href="#forgotPasswordModal" data-toggle="modal" data-dismiss="modal">Şifremi Unuttum   </a>
                 </div>
             </div>
         </form>
@@ -756,13 +756,71 @@
         </form>
     </div>
     <div class="modal-footer justify-content-center">
-        <p>Zaten üye misiniz? <a href="#girisModal" data-toggle="modal" data-dismiss="modal">Giriş Yapın</a></p>
+        <p>Zaten üye misiniz? <a href="#loginModal" data-toggle="modal" data-dismiss="modal">Giriş Yapın</a></p>
     </div>
     </div>
     </div>
     </div>
 
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="forgotPasswordModalLabel">Şifremi Unuttum</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="forgotpassword.php" method="post">
+                    <div class="form-group">
+                        <label for="forgotEmail">E-posta Adresiniz:</label>
+                        <input type="email" class="form-control" id="forgotEmail" name="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Şifre Sıfırlama Bağlantısı Gönder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="modal fade" id="resetPasswordModal" tabindex="-1" role="dialog" aria-labelledby="resetPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="resetPasswordModalLabel">Şifre Sıfırlama</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post">
+                    <input type="hidden" id="resetEmail" name="email" value="">
+                    <input type="hidden" id="resetToken" name="token" value="">
+                    <div class="form-group">
+                        <label for="newPassword">Yeni Şifre:</label>
+                        <input type="password" class="form-control" id="newPassword" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Yeni Şifre (Tekrar):</label>
+                        <input type="password" class="form-control" id="confirmPassword" name="passwordconfirm" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Şifreyi Değiştir</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script>
+function logout() {
+    window.location.href = "logout.php";
+}
+
+</script>
 
 <!-- Latest compiled JavaScript -->
 <script src="assets/js/jquery-3.6.0.min.js"> </script>
