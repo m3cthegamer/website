@@ -5,6 +5,9 @@ if(isset($_COOKIE["user"])) {
     setcookie("user", "", time() - 1, "/");
     // Ekrana bir mesaj yazdırabiliriz
     echo "Çerez silindi.";
+    // Index.php sayfasına yönlendirme işlemi
+    header("Location: index.php");
+    exit(); // İşlem bittikten sonra kodun devam etmemesi için çıkış yapılır
 } else {
     echo "Çerez bulunamadı.";
 }
