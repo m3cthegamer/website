@@ -59,7 +59,7 @@
                             <a class="nav-link" href="./service.html">Hizmetler</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="./projects.html">Projeler</a>
+                            <a class="nav-link" href="./projects.php">Projeler</a>
                         </li>
                         <li class="nav-space nav-item dropdown">
                             <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -67,7 +67,7 @@
                             <div class="dropdown-menu drop-down-content">
                                 <ul class="list-unstyled drop-down-pages">
                                     <li class="nav-item">
-                                        <a class="dropdown-item nav-link" href="./team.html">Takımımız</a>
+                                        <a class="dropdown-item nav-link" href="./market.php">Market</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item nav-link" href="./faq.html">S.S.S</a>
@@ -168,7 +168,7 @@
                                         <img src="./assets/images/testimonial-image.png" alt="" class="img-fluid">
                                     </figure>
                                     <span class="text-size-18">Efe Uğurlu</span>
-                                    <span class="text-size-16 mb-0">Head of informatics at EBI</span>
+                                    <span class="text-size-16 mb-0">Bilgi Verilmedi</span>
                                     <div class="box">
                                         <figure class="testimonial-comas mb-0">
                                             <img src="./assets/images/testimonial-comas.png" alt="" class="img-fluid">
@@ -358,7 +358,7 @@
                             <li><i class="fa-solid fa-angle-right"></i><a href="./index.php" class=" text-size-16 text text-decoration-none">Anasayfa</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./about.html" class=" text-size-16 text text-decoration-none">Hakkımızda</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./service.html" class=" text-size-16 text text-decoration-none">Hizmetler</a></li>
-                            <li><i class="fa-solid fa-angle-right"></i><a href="./projects.html" class=" text-size-16 text text-decoration-none">Projeler</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="./projects.php" class=" text-size-16 text text-decoration-none">Projeler</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./contact.html" class=" text-size-16 text text-decoration-none">Bize Ulaşın</a></li>
                         </ul>
                     </div>

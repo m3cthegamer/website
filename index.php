@@ -69,7 +69,7 @@
                             <div class="dropdown-menu drop-down-content">
                                 <ul class="list-unstyled drop-down-pages">
                                     <li class="nav-item">
-                                        <a class="dropdown-item nav-link" href="./team.html">Takımımız</a>
+                                        <a class="dropdown-item nav-link" href="./market.php">Market</a>
                                     </li>
                                     <li  class="nav-item">
                                         <a class="dropdown-item nav-link" href="./faq.html">S.S.S</a>
@@ -218,8 +218,8 @@
                                     <figure class="service-learningicon">
                                         <img src="./assets/images/service-learningicon.png" alt="" class="img-fluid">
                                     </figure>
-                                    <h4>Machine learning</h4>
-                                    <p class="text-size-16 mb-2">Butem vel eum iure reprehea rui in ea volutae velit...</p>
+                                    <h4>Makine Öğrenimi</h4>
+                                    <p class="text-size-16 mb-2">Makine öğrenimi yöntemleriyle nesnelerin...</p>
                                     <a class="read_more text-decoration-none" href="./service.html">Daha Fazla</a>
                                 </div>
                             </div>
@@ -233,7 +233,7 @@
                                 </figure>
                                 <h4>Animasyonlu & Öğretici Videolar</h4>
                                 <p class="text-size-16 mb-2">Animasyonlu ve öğretici videolarımız müşterilere bilgiyi daha etkili bir şekilde verir...</p>
-                                <a class="read_more text-decoration-none" href="./service.html">Read More</a>
+                                <a class="read_more text-decoration-none" href="./service.html">Daha Fazla</a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-12">
@@ -242,9 +242,9 @@
                                     <figure class="service-analysicon">
                                         <img src="./assets/images/service-analysicon.png" alt="" class="img-fluid">
                                     </figure>
-                                    <h4>Predictive Analysis</h4>
-                                    <p class="text-size-16 mb-2">Rutem vel eum iure reprehea rui in ea volutae velit...</p>
-                                    <a class="read_more text-decoration-none" href="./service.html">Read More</a>
+                                    <h4>Tahmin Analizi</h4>
+                                    <p class="text-size-16 mb-2">Yapay zeka ile nesne takibinde,tahminsel analizler...</p>
+                                    <a class="read_more text-decoration-none" href="./service.html">Daha Fazla</a>
                                 </div>
                             </div>
                         </div>
@@ -270,14 +270,13 @@
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-2 order-1">
                 <div class="choose_content" data-aos="fade-right">
-                    <h5>Why Choose Us</h5>
-                    <h2 class="text-white">Get Closer Look How Business Develop in AI Data Analysis</h2>
-                    <p class="text-white text-size-18">Consectetur adipiscing elit sed do eiusmod tempor in 
-                        labore et dolore magna aliqua ruis ipsum suspendisse ultrices gravida sit amet.</p>
+                    <h5>Neden Bizi Tercih Etmelisiniz?</h5>
+                    <h2 class="text-white">Ekibimizle güvenilir yapay zeka ile nesne takibi çözümleri sunuyoruz.</h2>
+                    <p class="text-white text-size-18">Yapay zeka ile nesne takibi konusunda alanında gelişmekte olan programcılardan oluşan bir ekiple çalışıyoruz</p>
                     <ul class="list-unstyled mb-0">
-                        <li class="text-white text text-size-18"><i class="circle fa-regular fa-angle-right"></i>Quis autem vel eum iure reprehenderit aui</li>
-                        <li class="text-white text text-size-18"><i class="circle fa-regular fa-angle-right"></i>Suscipit laboriosam nisi rut aliuid eum iure moli</li>
-                        <li class="text-white text text1 text-size-18"><i class="circle fa-regular fa-angle-right"></i>Dolor repellendus temporibus autem auibus</li>
+                        <li class="text-white text text-size-18"><i class="circle fa-regular fa-angle-right"></i>Teknolojide Uzmanlık ve Özelleştirilmiş Çözümler</li>
+                        <li class="text-white text text-size-18"><i class="circle fa-regular fa-angle-right"></i>Kalite ve Güvenilirlik</li>
+                        <li class="text-white text text1 text-size-18"><i class="circle fa-regular fa-angle-right"></i>Sürekli Destek ve İletişim</li>
                     </ul>
                     <a class="read_more text-decoration-none" href="./about.html">Daha Fazla<i class="circle fa-regular fa-angle-right"></i></a>
                 </div>
@@ -289,120 +288,27 @@
     </figure>   
 </section>
 <!-- Case Study -->
-<section class="study-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="study_content">
-                    <h5>Case Study</h5>
-                    <h2>Explore Our Case Studies</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row" data-aos="fade-up">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="case-box overlay">
-                    <figure class="image mb-0">
-                        <img src="./assets/images/case-image1.png" alt="" class="img-fluid">
-                    </figure>
-                    <div class="content">
-                        <span class="text-white">Robot Technology</span>
-                        <h4 class="text-white">Officia deserunt mollitia animi nobis</h4>
-                        <i class="circle fa-regular fa-angle-right"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="case-box overlay">
-                    <figure class="image mb-0">
-                        <img src="./assets/images/case-image2.png" alt="" class="img-fluid">
-                    </figure>
-                    <div class="content">
-                        <span class="text-white">User Research</span>
-                        <h4 class="text-white">Eum iure reprehenderit velit esse</h4>
-                        <i class="circle fa-regular fa-angle-right"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="case-box overlay">
-                    <figure class="image mb-0">
-                        <img src="./assets/images/case-image3.png" alt="" class="img-fluid">
-                    </figure>
-                    <div class="content">
-                        <span class="text-white">Machine Learning</span>
-                        <h4 class="text-white">Duis aute irure dolor in reprehenderit</h4>
-                        <i class="circle fa-regular fa-angle-right"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="lower-images" data-aos="fade-up">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="case-box overlay">
-                        <figure class="image mb-0">
-                            <img src="./assets/images/case-image4.png" alt="" class="img-fluid">
-                        </figure>
-                        <div class="content">
-                            <span class="text-white">Data Science</span>
-                            <h4 class="text-white">Numruam eius modi tema incidunt labore </h4>
-                            <i class="circle fa-regular fa-angle-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="case-box overlay">
-                        <figure class="image mb-0">
-                            <img src="./assets/images/case-image5.png" alt="" class="img-fluid">
-                        </figure>
-                        <div class="content text-pd">
-                            <span class="text-white">Artificial Intelligence</span>
-                            <h4 class="text-white">Molestiae non recusana delectuse</h4>
-                            <i class="circle fa-regular fa-angle-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="case-box overlay">
-                        <figure class="image mb-0">
-                            <img src="./assets/images/case-image6.png" alt="" class="img-fluid">
-                        </figure>
-                        <div class="content">
-                            <span class="text-white">BI execution</span>
-                            <h4 class="text-white">Exercitation ullamco laboris nisa</h4>
-                            <i class="circle fa-regular fa-angle-right"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="button">
-            <a class="view_all text-decoration-none" href="./about.html">Hepsini Gör<i class="circle fa-regular fa-angle-right"></i></a>
-        </div>
-    </div>
-</section>
+
 <!-- Testimonial -->
 <section class="testimonial-section">
     <div class="container">
         <div class="row position-relative">
             <div class="col-12">
                 <div class="heading">
-                    <h5>Testimonials</h5>
-                    <h2>Hear it From Our Clients</h2>
+                    <h5>Referanslar</h5>
+                    <h2>Müşteri Yorumları</h2>
                 </div>
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="testimonial_content">
                                 <div class="content-box">
-                                    <p class="h4">“Quisquam est, qui dolorem ipsum quia dolor sit amet conse aetur, adipisci velit, sed ruia non numquam eius modi temor
-                                        incidunt ut labore et dolore magnam alieuam zuaerat voluta tem nostrum exercitationem”</p>
+                                    <p class="h4">“Im very lucky to have a met you guys. HERSEY ICIN TESEKKURLER!!!!”</p>
                                     <figure class="testimonial-image mb-0">
                                         <img src="./assets/images/testimonial-image.png" alt="" class="img-fluid">
                                     </figure>
-                                    <span class="text-size-18">Peter Johns</span>
-                                    <span class="text-size-16 mb-0">Head of informatics at EBI</span>
+                                    <span class="text-size-18">John Bale</span>
+                                    <span class="text-size-16 mb-0">Yabancı</span>
                                     <div class="box">
                                         <figure class="testimonial-comas mb-0">
                                             <img src="./assets/images/testimonial-comas.png" alt="" class="img-fluid">
@@ -414,13 +320,13 @@
                         <div class="carousel-item">
                             <div class="testimonial_content">
                                 <div class="content-box">
-                                    <p>“Quisquam est, qui dolorem ipsum quia dolor sit amet conse aetur, adipisci velit, sed ruia non numquam eius modi temor
-                                        incidunt ut labore et dolore magnam alieuam zuaerat voluta tem nostrum exercitationem”</p>
+                                    <p>“Harika bir deneyim oldu benim için,her şey için teşekürler.
+                                        ”</p>
                                     <figure class="testimonial-image mb-0">
                                         <img src="./assets/images/testimonial-image.png" alt="" class="img-fluid">
                                     </figure>
-                                    <span class="text-size-18">Peter Johns</span>
-                                    <span class="text-size-16 mb-0">Head of informatics at EBI</span>
+                                    <span class="text-size-18">Beril Duman</span>
+                                    <span class="text-size-16 mb-0">Bilgi Verilmedi</span>
                                     <div class="box">
                                         <figure class="testimonial-comas">
                                             <img src="./assets/images/testimonial-comas.png" alt="" class="img-fluid">
@@ -433,11 +339,11 @@
                     <div class="pagination-outer">
                         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                             <i class="fa-solid fa-angle-right"></i>
-                            <span class="sr-only">Next</span>
+                            <span class="sr-only">Sonraki</span>
                         </a>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                             <i class="fa-solid fa-angle-left"></i>
-                            <span class="sr-only">Previous</span>
+                            <span class="sr-only">Önceki</span>
                         </a>
                     </div>
                 </div>
@@ -607,7 +513,8 @@
                         <h4 class="heading text-white">Hizmetlerimiz</h4>
                         <ul class="list-unstyled mb-0">
                             <li><i class="fa-solid fa-angle-right"></i><a href="./service.html" class=" text-size-16 text text-decoration-none">Nesne Takibi</a></li>
-                            <li><i class="fa-solid fa-angle-right"></i><a href="./team.html" class=" text-size-16 text text-decoration-none">Takımımız</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="./faq.html" class=" text-size-16 text text-decoration-none">Referanslar</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="./market.php" class=" text-size-16 text text-decoration-none">Market</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./faq.html" class=" text-size-16 text text-decoration-none">S.S.S</a></li>
                         </ul>
                     </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-    <title>Hakkımzıda | BCE</title>
+    <title>Market | BCE</title>
     <!-- /SEO Ultimate -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
@@ -67,7 +67,7 @@
                             <div class="dropdown-menu drop-down-content">
                                 <ul class="list-unstyled drop-down-pages">
                                     <li class="nav-item">
-                                        <a class="dropdown-item nav-link" href="./team.html">Takımımız</a>
+                                        <a class="dropdown-item nav-link" href="./market.php">Market</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item nav-link" href="./faq.html">S.S.S</a>
@@ -132,14 +132,14 @@
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                 <div class="aboutpage_content" data-aos="fade-right">
-                    <h5>Hakkımızda</h5>
-                    <h2>Size kendimizi biraz daha tanıtmak isteriz</h2>
-                    <p class="text-size-18">Bu yola 14 15 yaşlarında başlamaya karar veren,Dokuz Eylül Üniversitesi Bilgisayar Programcılığı öğrencisi olan üç kafadar... Bu maceramızda sizlerinde desteğiyle her zaman üstüne koyarak devam edeceğiz.</p>
+                    <h5>Market</h5>
+                    <h2>BCE Market ile alışveriş deneyimini en üste çıkarın.</h2>
+                    <p class="text-size-18">BCE Marketini ve ödeme sürelerini aşağıda detaylı bir şekilde bulabilirsiniz</p>
                     <ul class="list-unstyled mb-0">
-                        <li class="text text-size-18"><i class="circle fa-regular fa-angle-right"></i>Çalışkan,hırslı ve gelişime önem veren</li>
-                        <li class="text text-size-18"><i class="circle fa-regular fa-angle-right"></i>Eleştiriye açık ve gücünü burdan alan </li>
-                        <li class="text text1 text-size-18"><i class="circle fa-regular fa-angle-right"></i>Her zaman yenilikçi,ileriye dönük.</li>
-                        <p class="text-size-18">takımızla her zaman sizin yanınızdayız</p>
+                    <li class="text text-size-18"><i class="circle fa-regular fa-angle-right"></i>Oyun Deneyimini yukarılarda hissedin</li>
+                        <li class="text text-size-18"><i class="circle fa-regular fa-angle-right"></i>Animasyonlu Video Gösterimi</li>
+                        <li class="text text-size-18"><i class="circle fa-regular fa-angle-right"></i>%100 Güvenli ve Kolay Alışveriş </li>
+                        <li class="text text1 text-size-18"><i class="circle fa-regular fa-angle-right"></i>Sorun Halinde Anında İade Seçeneği</li>
                     </ul>
                 </div>
             </div>
@@ -218,8 +218,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="study_content">
-                    <h5>Case Study</h5>
-                    <h2>Explore Our Case Studies</h2>
+                    <h5>Market</h5>
+                    <h2>Abonelik Süreleri</h2>
                 </div>
             </div>
         </div>
@@ -232,8 +232,8 @@
                         </a>
                     </figure>
                     <div class="content">
-                        <span class="text-white">Robot Technology</span>
-                        <h4 class="text-white">Officia deserunt mollitia animi nobis</h4>
+                        <span class="text-white">1 GÜN</span>
+                        <h4 class="text-white">BCE ile Yeni Tanışanlar İçin Beginner Abonelik</h4>
                         <i class="circle fa-regular fa-angle-right"></i>
                     </div>
                 </div>
@@ -244,8 +244,8 @@
                         <img src="./assets/images/case-image2.png" alt="" class="img-fluid">
                     </figure>
                     <div class="content">
-                        <span class="text-white">User Research</span>
-                        <h4 class="text-white">Eum iure reprehenderit velit esse</h4>
+                        <span class="text-white">7 GÜN</span>
+                        <h4 class="text-white">Profesyonel Seviyeye Çıkmak İsteyenler İçin Prime Abonelik</h4>
                         <i class="circle fa-regular fa-angle-right"></i>
                     </div>
                 </div>
@@ -256,8 +256,8 @@
                         <img src="./assets/images/case-image3.png" alt="" class="img-fluid">
                     </figure>
                     <div class="content">
-                        <span class="text-white">Machine Learning</span>
-                        <h4 class="text-white">Duis aute irure dolor in reprehenderit</h4>
+                        <span class="text-white">30 GÜN</span>
+                        <h4 class="text-white">Oyun Deneyimini En Üstte Yaşamak isteyenler için Legendary Abonelik</h4>
                         <i class="circle fa-regular fa-angle-right"></i>
                     </div>
                 </div>
@@ -430,7 +430,7 @@
                         <ul class="list-unstyled mb-0">
                             <li><i class="fa-solid fa-angle-right"></i><a href="./service.html" class=" text-size-16 text text-decoration-none">Nesne Takibi</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./faq.html" class=" text-size-16 text text-decoration-none">Referanslar</a></li>
-                            <li><i class="fa-solid fa-angle-right"></i><a href="./team.html" class=" text-size-16 text text-decoration-none">Takımız</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="./market.php" class=" text-size-16 text text-decoration-none">Market</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./faq.html" class=" text-size-16 text text-decoration-none">S.S.S</a></li>
                         </ul>
                     </div>
