@@ -23,15 +23,18 @@ $result = $stmt->get_result();
 
 if ($result->num_rows === 1) {
     // Kullanıcı bulundu, şifre sıfırlama bağlantısı oluştur ve e-posta ile gönder
+    $row = $result->fetch_assoc();
+    $user_id = $row['id'];
     $reset_token = md5(uniqid(rand(), true)); // Rastgele bir sıfırlama anahtarı oluşturuyoruz.
-    $sql = "UPDATE register SET reset_token = ? WHERE email = ?";
+    
+    $sql = "UPDATE register SET reset_token = ? WHERE id = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $reset_token, $email);
+    $stmt->bind_param("si", $reset_token, $user_id);
     if ($stmt->execute()) {
         // Şifre sıfırlama bağlantısını oluştur
-        $reset_link = "http://localhost/test/index.php?email=" . urlencode($email) . "&token=" . urlencode($reset_token);
+        $reset_link = "http://localhost/test/resetpasswordform.php?token=" . urlencode($reset_token) . "&modal_id=passwordReset";
+
        
-        
         // E-posta gönderme işlemi
         $to = $email;
         $subject = "Şifre Sıfırlama";
@@ -41,15 +44,16 @@ if ($result->num_rows === 1) {
         $check = mail($to, $subject, $message, $headers);
 
         if($check) {
-            echo "Şifre sıfırlama bağlantısı e-posta adresinize gönderildi. Lütfen e-postanızı kontrol edin.";
+            header("Location: index.php?=" . "&modal_id=passwordResetSent" );
         } else {
-            echo "E-posta gönderilemedi. Lütfen daha sonra tekrar deneyin.";
+            header("Location: index.php?=" . "&modal_id=error" );
         }
     } else {
         echo "Şifre sıfırlama bağlantısı oluşturulurken bir hata oluştu. Lütfen daha sonra tekrar deneyin.";
     }
 } else {
-    echo "Bu e-posta adresi ile kayıtlı bir kullanıcı bulunamadı.";
+    // Bu e-posta adresiyle kayıtlı bir kullanıcı bulunamadı.
+    header("Location: index.php?=" . "&modal_id=userNotFound" );
 }
 
 // Bağlantıyı kapatma

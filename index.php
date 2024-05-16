@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -59,7 +60,7 @@
                             <a class="nav-link" href="./service.html">Hizmetler</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./projects.html">Projeler</a>
+                            <a class="nav-link" href="./projects.php">Projeler</a>
                         </li>
                         
                         <li class="nav-space nav-item dropdown">
@@ -76,21 +77,32 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-space nav-item">
+                        <li class="nav-space nav-item dropdown">
+    <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false"><img src="assets/images/profile-picture.png"  style="max-width: 30px; max-height: 30px;">
+  </a>
+    <div class="dropdown-menu drop-down-content">
+        <ul class="list-unstyled drop-down-pages">
+        <?php if (!isset($_COOKIE['user'])): ?>
+    <li class="nav-item">
+        <a class="dropdown-item nav-link" id="loginButton" type="button" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#loginModal">Oturum Aç</a>
+    </li>
+<?php else: ?>
+    <li class="nav-item">
+        <a class="dropdown-item nav-link" id="logoutButton" type="button" class="btn btn-primary py-3 px-4" href="javascript:void(0);" onclick="logout()">Çıkış</a>
+    </li>
+<?php endif; ?>
 
-                        <?php 
-                        if (!isset($_COOKIE ['user'])) {
-                                    echo '<a class="nav-link" id="loginButton" type="button" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#loginModal">Oturum Aç</a>';
-                                }
-                                if (isset($_COOKIE ['user'])) {
-                                    echo '<a class="nav-link" id="logoutButton" type="button" class="btn btn-primary py-3 px-4" href="javascript:void(0);" onclick="logout()">Çıkış</a>';
-                                }        
-                                ?>
+        </ul>
+    </div>
+</li>
+                                
                         </li>
                         <li class="nav-item">
                             <a class="nav-link lets_talk" href="./contact.html">Bize Ulaşın<i class="circle fa-regular fa-angle-right"></i></a>
                         </li>
                     </ul>
+                    
                 </div>
             </nav>
         </div>
@@ -552,41 +564,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                <div class="need-section">
-                    <div class="need_content"> 
-                        <h3>Bize Ulaşın</h3>
-                        <p class="text-size-16">Tek Tıkla Bizimle İletişime Geçin</p>
-                        <form id="contactpage" method="POST" action="./contact-form.php">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group mb-0">    
-                                    <input type="text" class="form_style" placeholder="Ad:" name="name"> 
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group mb-0">
-                                    <input type="email" class="form_style" placeholder="Email:" name="emailid">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group mb-0">
-                                    <input type="tel" class="form_style" placeholder="Telefon Numarası:" name="phone">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class=" form-group mb-0">    
-                                    <textarea class="form_style" placeholder="Mesaj" rows="3" name="msg"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="manage-button text-center">
-                                <button type="submit" class="submit_now text-decoration-none">Gönder<i class="circle fa-regular fa-angle-right"></i></button>
-                            </div>
-                        </form>
-                        <figure class="faq-image mb-0">
-                            <img src="./assets/images/faq-image.png" alt="" class="img-fluid">
-                        </figure>
                     </div>
                 </div>
             </div>
@@ -620,7 +597,7 @@
                             <li><i class="fa-solid fa-angle-right"></i><a href="./index.php" class=" text-size-16 text text-decoration-none">Anasayfa</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./about.html" class=" text-size-16 text text-decoration-none">Hakkımızda</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./service.html" class=" text-size-16 text text-decoration-none">Hizmetler</a></li>
-                            <li><i class="fa-solid fa-angle-right"></i><a href="./projects.html" class=" text-size-16 text text-decoration-none">Projeler</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="./projects.php" class=" text-size-16 text text-decoration-none">Projeler</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./contact.html" class=" text-size-16 text text-decoration-none">Bize Ulaşın</a></li>
                         </ul>
                     </div>
@@ -696,7 +673,7 @@
             <span class="ion-ios-person"></span>
         </div>
         <h3 class="text-center mb-4">Giriş Yap</h3>
-        <form action="login.php" method="post" class="login-form"> <!-- action ve method belirlendi -->
+        <form action="login.php" method="post" class="login-form"> 
             <div class="form-group">
                 <input type="text" class="form-control rounded-left" placeholder="Kullanıcı Adı" name="username"> <!-- name belirlendi -->
             </div>
@@ -812,6 +789,268 @@
     </div>
 </div>
 
+<div class="modal fade" id="noAccountFound" tabindex="-1" role="dialog" aria-labelledby="noAccountFoundLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="noAccountFoundLabel">Kayıtlı kullanıcı bulunamadı.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>E-Posta veya Şifrenizi Tekrar Deneyin.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="loginSuccess" tabindex="-1" role="dialog" aria-labelledby="loginSuccessLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginSuccessLabel">Hoş Geldiniz!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            <?php if (isset($_COOKIE['user'])): ?>
+        <p>Hoş geldiniz, <?php echo htmlspecialchars($_COOKIE['user']); ?>!</p>
+    <?php endif; ?>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="notVerified" tabindex="-1" role="dialog" aria-labelledby="notVerifiedLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="notVerifiedLabel">Hesap Onayı Gerekli</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Hesabınız henüz onaylanmamış. Lütfen hesabınızı onaylamak için e-postanıza gönderilen bağlantıya tıklayın.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Verified" tabindex="-1" role="dialog" aria-labelledby="VerifiedLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="VerifiedLabel">Hesap Onayı Başarılı</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Hesabınız başarıyla onaylandı. Artık tüm özelliklerden yararlanabilirsiniz.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="registerSuccess" tabindex="-1" role="dialog" aria-labelledby="registersuccessLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registersuccessLabel">Kayıt Başarılı</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Yeni kayıt başarıyla oluşturuldu. Lütfen e-postanızı kontrol edin ve üyeliğinizi aktive edin.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="loginForPurchase" tabindex="-1" role="dialog" aria-labelledby="loginForPurchaseModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginForPurchaseModalLabel">Dikkat</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Satın alım yapmak için giriş yapın.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Giriş Yap</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="existingUser" tabindex="-1" role="dialog" aria-labelledby="existingUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="existingUserModalLabel">Hata</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Bu e-posta adresiyle zaten kayıtlı bir kullanıcı bulunmaktadır.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="existingUsername" tabindex="-1" role="dialog" aria-labelledby="existingUsernameModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="existingUsernameModalLabel">Hata</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Bu kullanıcı adı zaten kullanılıyor.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="errorModalLabel">Hata</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Beklenmedik Bir Hata Oluştu.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="passwordResetSent" tabindex="-1" role="dialog" aria-labelledby="passwordResetSentLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="passwordResetSentLabel">Başarılı</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Şifre sıfırlama bağlantısı e-posta adresinize gönderildi. Lütfen e-postanızı kontrol edin.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="userNotFound" tabindex="-1" role="dialog" aria-labelledby="userNotFoundLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="userNotFoundLabel">Hata</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Bu e-posta adresi ile kayıtlı bir kullanıcı bulunamadı.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="passwordUpdated" tabindex="-1" role="dialog" aria-labelledby="passwordUpdatedLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="passwordUpdatedLabel">Başarılı</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Şifre başarıyla güncellendi.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="passwordUpdateError" tabindex="-1" role="dialog" aria-labelledby="passwordUpdateErrorLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="passwordUpdateErrorLabel">Hata</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Şifre güncellenirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="successPurchase" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">İşlem Başarılı</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Bilgiler e-postanıza gönderildi.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -819,10 +1058,11 @@
 function logout() {
     window.location.href = "logout.php";
 }
-
 </script>
 
-<!-- Latest compiled JavaScript -->
+
+
+
 <script src="assets/js/jquery-3.6.0.min.js"> </script>
 <script src="assets/js/bootstrap.min.js"> </script>
 <script src="assets/js/video_link.js"></script>
@@ -831,5 +1071,58 @@ function logout() {
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/animation_links.js"></script>
 <script src="assets/js/animation.js"></script>
+<script src="assets/js/test.js"></script>
+
+
+<?php
+function showModal($modal_id) {
+    echo "<script>$(document).ready(function() {
+        $('#$modal_id').modal('show'); 
+    });</script>";
+}
+if (isset($_GET['modal_id']) && $_GET['modal_id'] == 'noAccountFound') {
+    showModal('noAccountFound');
+}
+if (isset($_GET['modal_id']) && $_GET['modal_id'] == 'loginSuccess') {
+    showModal('loginSuccess');
+}
+if (isset($_GET['modal_id']) && $_GET['modal_id'] == 'notVerified') {
+    showModal('notVerified');
+}
+if (isset($_GET['modal_id']) && $_GET['modal_id'] == 'Verified') {
+    showModal('Verified');
+}
+if (isset($_GET['modal_id']) && $_GET['modal_id'] == 'registerSuccess') {
+    showModal('registerSuccess');
+}
+if (isset($_GET['modal_id']) && $_GET['modal_id'] == 'loginForPurchase') {
+    showModal('loginForPurchase');
+}
+if (isset($_GET['modal_id']) && $_GET['modal_id'] == 'existingUser') {
+    showModal('existingUser');
+}
+if (isset($_GET['modal_id']) && $_GET['modal_id'] == 'existingUsername') {
+    showModal('existingUsername');
+}
+if (isset($_GET['modal_id']) && $_GET['modal_id'] == 'error') {
+    showModal('error');
+}
+if (isset($_GET['modal_id']) && $_GET['modal_id'] == 'passwordResetSent') {
+    showModal('passwordResetSent');
+}
+if (isset($_GET['modal_id']) && $_GET['modal_id'] == 'userNotFound') {
+    showModal('userNotFound');
+}
+if (isset($_GET['modal_id']) && $_GET['modal_id'] == 'passwordUpdateError') {
+    showModal('passwordUpdateError');
+}
+if (isset($_GET['modal_id']) && $_GET['modal_id'] == 'passwordUpdated') {
+    showModal('passwordUpdated');
+}
+if (isset($_GET['modal_id']) && $_GET['modal_id'] == 'successPurchase') {
+    showModal('successPurchase');
+}
+?>
+
 </body>
 </html>
