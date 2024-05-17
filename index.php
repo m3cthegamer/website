@@ -3,7 +3,6 @@
 <html lang="zxx">
 <head>
     <title>Anasayfa | BCE</title>
-    <!-- /SEO Ultimate -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
@@ -23,12 +22,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!-- Latest compiled and minified CSS -->
     <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/js/bootstrap.min.js">
-    <!-- Font Awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- StyleSheet link CSS -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
@@ -36,12 +32,11 @@
 </head>
 
 <body>
-<!--Header  -->
 <div class="banner_outer">
     <header class="header">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="./index.php"><figure class="mb-0 banner-logo"><img src="./assets/images/logo.png" alt="" class="img-fluid"></figure></a>
+                <a class="navbar-brand" href="./index.php"><figure class="mb-0 banner-logo"><img src="./assets/images/haslogo.png" alt="" class="img-fluid"></figure></a>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,32 +46,32 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="./index.php">Anasayfa</a>
+                        <a class="nav-link" href="./index.php">Anasayfa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about.html">Hakkımızda</a>
+                        <a class="nav-link" href="./about.html">Hakkımızda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./service.html">Hizmetler</a>
-                        </li>
+                    <a class="nav-link" href="./service.html">Hizmetler</a>
+                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./projects.php">Projeler</a>
                         </li>
-                        
+        
                         <li class="nav-space nav-item dropdown">
                             <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"> Ekstra </a>
                             <div class="dropdown-menu drop-down-content">
-                                <ul class="list-unstyled drop-down-pages">
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link" href="./market.php">Market</a>
-                                    </li>
-                                    <li  class="nav-item">
-                                        <a class="dropdown-item nav-link" href="./faq.html">S.S.S</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                            <ul class="list-unstyled drop-down-pages">
+                                <li class="nav-item">
+                                <a class="dropdown-item nav-link" href="./market.php">Market</a>
+                                </li>
+                                <li  class="nav-item">
+                                    <a class="dropdown-item nav-link" href="./faq.html">S.S.S</a>
+                         </li>
+                            </ul>
+                        </div>
+                            </li>
                         <li class="nav-space nav-item dropdown">
     <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false"><img src="assets/images/profile-picture.png"  style="max-width: 30px; max-height: 30px;">
@@ -89,7 +84,7 @@
     </li>
 <?php else: ?>
     <li class="nav-item">
-        <a class="dropdown-item nav-link" id="logoutButton" type="button" class="btn btn-primary py-3 px-4" href="javascript:void(0);" onclick="logout()">Çıkış</a>
+    <a class="dropdown-item nav-link" id="logoutButton" type="button" class="btn btn-primary py-3 px-4" href="javascript:void(0);" onclick="logout()">Çıkış</a>
     </li>
 <?php endif; ?>
 
@@ -97,10 +92,10 @@
     </div>
 </li>
                                 
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link lets_talk" href="./contact.html">Bize Ulaşın<i class="circle fa-regular fa-angle-right"></i></a>
-                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lets_talk" href="./contact.php">Bize Ulaşın<i class="circle fa-regular fa-angle-right"></i></a>
+                    </li>
                     </ul>
                     
                 </div>
@@ -110,18 +105,18 @@
     <figure class="banner-sideshape mb-0">
         <img src="./assets/images/banner-sideshape.png" alt="" class="img-fluid">
     </figure>
-<!-- Banner -->
+
 <section class="banner-section">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-7 col-md-12 col-sm-12 col-12">
-                <div class="banner_content">
+            <div class="banner_content">
                     <h1 class="text-white">Yapay Zeka ile Nesne Takibi alanında büyümeye devam ediyor.</h1>
                     <p class="text-white">Bu alan, nesnelerin tanınması, izlenmesi ve anlaşılması konularında önemli adımlar atarak birçok sektörde verimliliği artırıyor ve yeni olanaklar sunuyor.
                     </p>
                     <div class="banner-button">
-                        <a class="button1 lets_talk text-decoration-none" href="./about.html">Daha Fazla<i class="circle fa-regular fa-angle-right"></i></a>
-                        <a class="lets_talk text-decoration-none" href="./contact.html">Bize Ulaşın<i class="circle fa-regular fa-angle-right"></i></a>   
+                    <a class="button1 lets_talk text-decoration-none" href="./about.html">Daha Fazla<i class="circle fa-regular fa-angle-right"></i></a>
+                    <a class="lets_talk text-decoration-none" href="./contact.php">Bize Ulaşın<i class="circle fa-regular fa-angle-right"></i></a>   
                     </div> 
                 </div>
             </div>
@@ -130,26 +125,25 @@
                     <figure class="mb-0 banner-image">
                         <img src="./assets/images/banner-image.png" alt="" class="">
                     </figure> 
-                </div>
+            </div>
             </div>
         </div>
-    </div>
+        </div>
     <figure class="banner-sideshape2 mb-0">
         <img src="./assets/images/banner-sideshape2.png" alt="" class="img-fluid">
     </figure>   
 </section>
 </div>
-<!-- About us -->
 <section class="about-section">
     <div class="container">
-        <div class="row">
+    <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                <div class="about_wrapper">
-                    <figure class="mb-0 about-image1">
-                        <img src="./assets/images/about-image1.png" alt="" class="img-fluid">
-                    </figure> 
+            <div class="about_wrapper">
+                <figure class="mb-0 about-image1">
+                    <img src="./assets/images/aboutimage1.png" alt="" class="img-fluid">
+                </figure> 
                     <figure class="mb-0 about-image2">
-                        <img src="./assets/images/about-image2.png" alt="" class="img-fluid">
+                        <img src="./assets/images/aboutperson.png" alt="" class="img-fluid">
                     </figure>
                 </div>
             </div>
@@ -160,8 +154,8 @@
                     <p class="text-size-18">Nesne takibi teknolojisinin oyun endüstrisindeki kullanımı giderek artıyor ve oyun deneyimini daha etkileyici hale getiriyor</p>
                     <div class="about-lowercontent">
                         <div class="image">
-                            <figure class="mb-0 icon">
-                            <img src="./assets/images/about-customer.png" alt="" class="img-fluid">
+                        <figure class="mb-0 icon">
+                             <img src="./assets/images/about-customer.png" alt="" class="img-fluid">
                             </figure>
                         </div>
                         <div class="content">
@@ -181,10 +175,10 @@
                     <a class="read_more text-decoration-none" href="./about.html">Daha Fazla<i class="circle fa-regular fa-angle-right"></i></a>
                 </div>
             </div>
-        </div>
-    </div>
+           </div>
+      </div>
 </section>
-<!-- Services -->
+
 <section class="service-section position-relative">
     <div class="container">
         <figure class="service-image mb-0">
@@ -192,11 +186,11 @@
         </figure>
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                <div class="service_content" data-aos="fade-right">
+            <div class="service_content" data-aos="fade-right">
                     <h5>Sunduğumuz Hizmetler</h5>
                     <h2>BCE Olarak Odak Noktamız Uygulama, Kalite ve Hizmette Mükemmeliyeti Sağlamaktır.</h2>
                     <p class="text-size-18"></p>
-                    <a class="read_more text-decoration-none" href="./service.html">Daha Fazla<i class="circle fa-regular fa-angle-right"></i></a>
+                <a class="read_more text-decoration-none" href="./service.html">Daha Fazla<i class="circle fa-regular fa-angle-right"></i></a>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
@@ -210,7 +204,7 @@
                                 <h4>Nesne Takibi</h4>
                                 <p class="text-size-16 mb-2">Yapay zeka destekli nesne takibi teknolojisi, çevresel algılamayı geliştirerek birçok alanda verimliliği artırıyor...</p>
                                 <a class="read_more text-decoration-none" href="./service.html">Daha Fazla</a>
-                            </div>   
+                                </div>   
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                             <div class="box-top">
@@ -221,9 +215,10 @@
                                     <h4>Makine Öğrenimi</h4>
                                     <p class="text-size-16 mb-2">Makine öğrenimi yöntemleriyle nesnelerin...</p>
                                     <a class="read_more text-decoration-none" href="./service.html">Daha Fazla</a>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                    </div>
+
+                    </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-12">
@@ -247,12 +242,12 @@
                                     <a class="read_more text-decoration-none" href="./service.html">Daha Fazla</a>
                                 </div>
                             </div>
-                        </div>
+                           </div>
+                       </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                     </div>
+                     </div>
+                   </div>
 </section>
 <!-- Choose -->
 <section class="choose-section">
@@ -262,9 +257,9 @@
     </figure>
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-2">
-                <div class="choose_wrapper">
+            <div class="choose_wrapper">
                     <figure class="mb-0 choose-image">
-                        <img src="./assets/images/choose-image.png" alt="" class="">
+                    <img src="./assets/images/choose-image.png" alt="" class="">
                     </figure> 
                 </div>
             </div>
@@ -277,7 +272,7 @@
                         <li class="text-white text text-size-18"><i class="circle fa-regular fa-angle-right"></i>Teknolojide Uzmanlık ve Özelleştirilmiş Çözümler</li>
                         <li class="text-white text text-size-18"><i class="circle fa-regular fa-angle-right"></i>Kalite ve Güvenilirlik</li>
                         <li class="text-white text text1 text-size-18"><i class="circle fa-regular fa-angle-right"></i>Sürekli Destek ve İletişim</li>
-                    </ul>
+                     </ul>
                     <a class="read_more text-decoration-none" href="./about.html">Daha Fazla<i class="circle fa-regular fa-angle-right"></i></a>
                 </div>
             </div>
@@ -305,7 +300,7 @@
                                 <div class="content-box">
                                     <p class="h4">“Im very lucky to have a met you guys. HERSEY ICIN TESEKKURLER!!!!”</p>
                                     <figure class="testimonial-image mb-0">
-                                        <img src="./assets/images/testimonial-image.png" alt="" class="img-fluid">
+                                        <img src="./assets/images/client-avatar.png" alt="" class="img-fluid">
                                     </figure>
                                     <span class="text-size-18">John Bale</span>
                                     <span class="text-size-16 mb-0">Yabancı</span>
@@ -323,7 +318,7 @@
                                     <p>“Harika bir deneyim oldu benim için,her şey için teşekürler.
                                         ”</p>
                                     <figure class="testimonial-image mb-0">
-                                        <img src="./assets/images/testimonial-image.png" alt="" class="img-fluid">
+                                        <img src="./assets/images/client-avatar.png" alt="" class="img-fluid">
                                     </figure>
                                     <span class="text-size-18">Beril Duman</span>
                                     <span class="text-size-16 mb-0">Bilgi Verilmedi</span>
@@ -332,9 +327,9 @@
                                             <img src="./assets/images/testimonial-comas.png" alt="" class="img-fluid">
                                         </figure>
                                     </div>
-                                </div>
                             </div>
-                        </div>
+                            </div>
+                    </div>
                     </div>
                     <div class="pagination-outer">
                         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
@@ -347,7 +342,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+                </div>
         </div>
         <figure class="mb-0 testimonial-sideimage">
             <img src="./assets/images/testimonial-sideimage.png" alt="" class="img-fluid">
@@ -423,23 +418,22 @@
                                                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
                                                     <div class="card-body">
                                                         <p class="text-size-18 text-left mb-0">Sistemimiz, farklı işletim sistemleri ve platformlarla uyumlu olacak şekilde tasarlanmıştır. </p>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
+                                      </div>
+                                     </div>
+                               </div>
+                             </div>
                         </div>
+                        </div>
+                     </div>
+                    </div>
                     </div>
                 </div>
-            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+               </div>
+               </div>
 </section>
-<!-- Footer -->
 <section class="footer-section">
     <div class="container">
         <figure class="footer-sideshape mb-0">
@@ -450,15 +444,10 @@
                 <div class="col-lg-4 col-md-5 col-sm-6 col-12">
                     <a href="./index.php">
                         <figure class="footer-logo">
-                            <img src="./assets/images/logo.png" class="img-fluid" alt="">
+                            <img src="./assets/images/haslogo.png" class="img-fluid" alt="">
                         </figure>
                     </a>
                     <p class="text-size-16 footer-text text-white"></p>
-                    <ul class="list-unstyled mb-0 social-icons">
-                        <li class="circle"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li class="circle"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li class="circle"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    </ul>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-12 col-12 d-md-block d-none">
                     <div class="links">
@@ -468,7 +457,7 @@
                             <li><i class="fa-solid fa-angle-right"></i><a href="./about.html" class=" text-size-16 text text-decoration-none">Hakkımızda</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./service.html" class=" text-size-16 text text-decoration-none">Hizmetler</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./projects.php" class=" text-size-16 text text-decoration-none">Projeler</a></li>
-                            <li><i class="fa-solid fa-angle-right"></i><a href="./contact.html" class=" text-size-16 text text-decoration-none">Bize Ulaşın</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="./contact.php" class=" text-size-16 text text-decoration-none">Bize Ulaşın</a></li>
                         </ul>
                     </div>
                 </div>
@@ -501,32 +490,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div id="fixed-form-container">
-            <div class="image">
-                <figure class="footer-image mb-0">
-                    <img src="./assets/images/footer-image.png" alt="" class="img-fluid">
-                </figure>
-            </div>
-            <div class="body">
-                <form id="contactpage1" method="POST" action="./contact-form.php">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Name:" name="name"> 
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Your Email:" name="emailid">
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" class="form-control" placeholder="Phone:" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form_style" placeholder="Message" rows="3" name="msg"></textarea>
-                    </div>
-                    <button type="submit" class="submit_now text-decoration-none">Submit Now</button>
-                </form>
-            </div>
-        </div> -->
 </section>
-
 </div>
 </div>
 </div>
@@ -546,10 +510,10 @@
         <h3 class="text-center mb-4">Giriş Yap</h3>
         <form action="login.php" method="post" class="login-form"> 
             <div class="form-group">
-                <input type="text" class="form-control rounded-left" placeholder="Kullanıcı Adı" name="username"> <!-- name belirlendi -->
+                <input type="text" class="form-control rounded-left" placeholder="Kullanıcı Adı" name="username"> 
             </div>
             <div class="form-group d-flex">
-                <input type="password" class="form-control rounded-left" placeholder="Şifre" name="password"> <!-- name belirlendi -->
+                <input type="password" class="form-control rounded-left" placeholder="Şifre" name="password"> 
             </div>
             <div class="form-group">
                 <button type="submit" class="form-control btn btn-primary rounded submit px-3">Giriş Yap</button>

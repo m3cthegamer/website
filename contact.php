@@ -2,7 +2,6 @@
 <html lang="zxx">
 <head>
     <title>Bize Ulaşın | BCE</title>
-    <!-- /SEO Ultimate -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
@@ -22,12 +21,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!-- Latest compiled and minified CSS -->
     <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/js/bootstrap.min.js">
-    <!-- Font Awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- StyleSheet link CSS -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
@@ -35,12 +31,11 @@
 </head>
 
 <body>
-<!--Header  -->
 <div class="sub-banner">
     <header class="header">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="./index.php"><figure class="mb-0 banner-logo"><img src="./assets/images/logo.png" alt="" class="img-fluid"></figure></a>
+                <a class="navbar-brand" href="./index.php"><figure class="mb-0 banner-logo"><img src="./assets/images/haslogo.png" alt="" class="img-fluid"></figure></a>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -79,17 +74,16 @@
                         
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link lets_talk" href="./contact.html">Bize Ulaşın<i class="circle fa-regular fa-angle-right"></i></a>
+                            <a class="nav-link lets_talk" href="./contact.php">Bize Ulaşın<i class="circle fa-regular fa-angle-right"></i></a>
                         </li>
                     </ul>
                 </div>
             </nav>
-        </div>
+    </div>
     </header>
     <figure class="sub-bannersideshape mb-0">
         <img src="./assets/images/sub-bannersideshape.png" alt="" class="img-fluid">
     </figure>
-<!-- Sub-Banner -->
     <section class="banner-section">
         <div class="container">
             <div class="row">
@@ -109,14 +103,13 @@
                         </figure> 
                     </div>  
                 </div>
-            </div>
+        </div>
         </div> 
         <figure class="sub-bannersideshape2 mb-0">
             <img src="./assets/images/sub-bannersideshape2.png" alt="" class="img-fluid">
         </figure>
     </section>
 </div>
-<!--Contact section-->
 <section class="contact-section">
     <div class="container">
         <div class="row">
@@ -175,7 +168,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+            </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                 <div class="need-section">
@@ -214,9 +207,9 @@
                         </figure>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+                  </div>
+                </div>
+</div>
 </section>
 <div class="contact_map_section">
     <div class="row">
@@ -227,7 +220,6 @@
         </div>
     </div>
 </div>
-<!-- Footer -->
 <section class="footer-section">
     <div class="container">
         <figure class="footer-sideshape mb-0">
@@ -238,15 +230,10 @@
                 <div class="col-lg-4 col-md-5 col-sm-6 col-12">
                     <a href="./index.php">
                         <figure class="footer-logo">
-                            <img src="./assets/images/logo.png" class="img-fluid" alt="">
+                            <img src="./assets/images/haslogo.png" class="img-fluid" alt="">
                         </figure>
                     </a>
                     <p class="text-size-16 footer-text text-white"></p>
-                    <ul class="list-unstyled mb-0 social-icons">
-                        <li class="circle"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li class="circle"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li class="circle"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    </ul>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-12 col-12 d-md-block d-none">
                     <div class="links">
@@ -256,7 +243,7 @@
                             <li><i class="fa-solid fa-angle-right"></i><a href="./about.html" class=" text-size-16 text text-decoration-none">Hakkımızda</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./service.html" class=" text-size-16 text text-decoration-none">Hizmetlerimiz</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./projects.php" class=" text-size-16 text text-decoration-none">Projeler</a></li>
-                            <li><i class="fa-solid fa-angle-right"></i><a href="./contact.html" class=" text-size-16 text text-decoration-none">Bize Ulaşın</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="./contact.php" class=" text-size-16 text text-decoration-none">Bize Ulaşın</a></li>
                         </ul>
                     </div>
                 </div>
@@ -287,32 +274,8 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- <div id="fixed-form-container">
-            <div class="image">
-                <figure class="footer-image mb-0">
-                    <img src="./assets/images/footer-image.png" alt="" class="img-fluid">
-                </figure>
-            </div>
-            <div class="body">
-                <form id="contactpage1" method="POST" action="./contact-form.php">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Name:" name="name"> 
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Your Email:" name="emailid">
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" class="form-control" placeholder="Phone:" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form_style" placeholder="Message" rows="3" name="msg"></textarea>
-                    </div>
-                    <button type="submit" class="submit_now text-decoration-none">Gönder</button>
-                </form>
-            </div>
-        </div> -->
+             </div>
+              </div>
         
         <div class="modal fade" id="messageSent" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -348,12 +311,10 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
                     </div>
-                </div>
             </div>
-        </div>
-
+            </div>
+</div>
 </section>
-<!-- Latest compiled JavaScript -->
 <script src="assets/js/jquery-3.6.0.min.js"> </script>
 <script src="assets/js/bootstrap.min.js"> </script>
 <script src="assets/js/video_link.js"></script>

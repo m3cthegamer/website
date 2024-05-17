@@ -2,7 +2,6 @@
 <html lang="zxx">
 <head>
     <title>Projeler | BCE</title>
-    <!-- /SEO Ultimate -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
@@ -22,12 +21,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!-- Latest compiled and minified CSS -->
     <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/js/bootstrap.min.js">
-    <!-- Font Awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- StyleSheet link CSS -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
@@ -35,12 +31,11 @@
 </head>
 
 <body>
-<!--Header  -->
 <div class="sub-banner">
     <header class="header">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="./index.php"><figure class="mb-0 banner-logo"><img src="./assets/images/logo.png" alt="" class="img-fluid"></figure></a>
+                <a class="navbar-brand" href="./index.php"><figure class="mb-0 banner-logo"><img src="./assets/images/haslogo.png" alt="" class="img-fluid"></figure></a>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -79,17 +74,16 @@
                             
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link lets_talk" href="./contact.html">Bize Ulaşın<i class="circle fa-regular fa-angle-right"></i></a>
+                            <a class="nav-link lets_talk" href="./contact.php">Bize Ulaşın<i class="circle fa-regular fa-angle-right"></i></a>
                         </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+                  </ul>
+                 </div>
+                </nav>
+              </div>
     </header>
     <figure class="sub-bannersideshape mb-0">
         <img src="./assets/images/sub-bannersideshape.png" alt="" class="img-fluid">
     </figure>
-<!-- Sub-Banner -->
     <section class="banner-section">
         <div class="container">
             <div class="row">
@@ -101,22 +95,21 @@
                             <span class="mb-0">Anasayfa</span><i class="first fa-regular fa-angle-right"></i><i class="second fa-regular fa-angle-right"></i><span class="mb-0 box_span">Projeler</span>
                         </div> 
                     </div>
-                </div> 
+                  </div> 
                 <div class="col-lg-5 col-md-6 col-sm-12 col-12">
                     <div class="banner_wrapper">
                         <figure class="mb-0 sub-bannerimage">
                             <img src="./assets/images/sub-bannerimage.png" alt="" class="">
                         </figure> 
                     </div>  
-                </div>
-            </div>
-        </div> 
+                   </div>
+                   </div>
+                   </div> 
         <figure class="sub-bannersideshape2 mb-0">
             <img src="./assets/images/sub-bannersideshape2.png" alt="" class="img-fluid">
         </figure>
     </section>
 </div>
-<!-- Case Study -->
 <section class="study-section">
     <div class="container">
         <div class="row">
@@ -139,17 +132,16 @@
                         <span class="text-white">Nesne Takibi</span>
                         <h4 class="text-white">Yapay Zeka ile Nesne Takibi başka bir boyut açıyor...</h4>
                         <i class="circle fa-regular fa-angle-right"></i>
-                    </div>
-                </div>
             </div>
+           </div>
+         </div>
             
         </div>
         
-            <a class="view_all text-decoration-none" href="./about.html">Hepsini Gör<i class="circle fa-regular fa-angle-right"></i></a>
+            <a class="view_all text-decoration-none" href="market.php">Hepsini Gör<i class="circle fa-regular fa-angle-right"></i></a>
         </div>
     </div>
 </section>
-<!-- Testimonial -->
 <section class="testimonial-section">
     <div class="container">
         <div class="row position-relative">
@@ -165,7 +157,7 @@
                                 <div class="content-box">
                                     <p class="h4">“Sitenizdeki yapay zeka ile nesne takibi çözümleri,projemde büyük bir fark yarattı.Destek ekibinize ve özellikle Berk bey`e ilgilerinden dolayı çok teşekkür ederim”</p>
                                     <figure class="testimonial-image mb-0">
-                                        <img src="./assets/images/testimonial-image.png" alt="" class="img-fluid">
+                                        <img src="./assets/images/client-avatar.png" alt="" class="img-fluid">
                                     </figure>
                                     <span class="text-size-18">Efe Uğurlu</span>
                                     <span class="text-size-16 mb-0">Bilgi Verilmedi</span>
@@ -182,7 +174,7 @@
                                 <div class="content-box">
                                     <p>“Okul projemde çok yardımcı oldu.Bütün BCE ekibine teşekkür ederim.”</p>
                                     <figure class="testimonial-image mb-0">
-                                        <img src="./assets/images/testimonial-image.png" alt="" class="img-fluid">
+                                        <img src="./assets/images/client-avatar.png" alt="" class="img-fluid">
                                     </figure>
                                     <span class="text-size-18">Ayça Demir</span>
                                     <span class="text-size-16 mb-0">Öğrenci</span>
@@ -191,10 +183,10 @@
                                             <img src="./assets/images/testimonial-comas.png" alt="" class="img-fluid">
                                         </figure>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                   </div>
+                                   </div>
+                                  </div>
+                                  </div>
                     <div class="pagination-outer">
                         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                             <i class="fa-solid fa-angle-right"></i>
@@ -211,43 +203,8 @@
         <figure class="mb-0 testimonial-sideimage">
             <img src="./assets/images/testimonial-sideimage.png" alt="" class="img-fluid">
         </figure>
-    </div>
-    <!-- Partner -->
-    <div class="partner-section"> 
-        <div class="container">
-            <div class="partner" data-aos="fade-up">
-                <ul class="mb-0 list-unstyled">
-                    <li>
-                        <figure class="mb-0 partner1 img1">
-                            <img class="img-fluid" src="./assets/images/partner1.png" alt="">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="mb-0 partner1 partner2 img2">
-                            <img class="img-fluid" src="./assets/images/partner2.png" alt="">
-                        </figure>
-                    </li>
-                    <li class="img-mb">
-                        <figure class="mb-0 partner1 partner3 img3">
-                            <img class="img-fluid" src="./assets/images/partner3.png" alt="">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="mb-0 partner1 partner4 img4">
-                            <img class="img-fluid" src="./assets/images/partner4.png" alt="">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="mb-0 partner1 partner5 img5">
-                            <img class="img-fluid" src="./assets/images/partner5.png" alt="">
-                        </figure>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+</div>
 </section>
-<!--FAQ / Need section-->
 <section class="faq-section">
     <div class="container">
         <div class="row">
@@ -282,9 +239,9 @@
                                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
                                                     <div class="card-body">
                                                         <p class="text-size-18 text-left mb-0">Müşterilerimize kesintisiz bir deneyim sunmak için 7/24 teknik destek hizmeti sağlıyoruz. Uzman teknik ekip üyelerimiz, herhangi bir sorunuz veya yardıma ihtiyacınız olduğunda size yardımcı olmak için hazır. </p>
-                                                    </div>
+                                                 </div>
                                                 </div>
-                                            </div>
+                                                </div>
                                             <div class="accordion-card">
                                                 <div class="card-header" id="headingThree">
                                                     <a href="#" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -304,9 +261,9 @@
                                                     </a>
                                                 </div>
                                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
-                                                    <div class="card-body">
-                                                        <p class="text-size-18 text-left mb-0">Ödeme kolaylığı sağlamak adına çeşitli ödeme yöntemlerini kabul ediyoruz. Kredi kartları, banka kartları ve elektronik ödeme sistemleri gibi yaygın olarak kullanılan yöntemlerin yanı sıra, banka havalesi gibi alternatif ödeme seçenekleri de mevcuttur.</p>
-                                                    </div>
+                                                <div class="card-body">
+                                                    <p class="text-size-18 text-left mb-0">Ödeme kolaylığı sağlamak adına çeşitli ödeme yöntemlerini kabul ediyoruz. Kredi kartları, banka kartları ve elektronik ödeme sistemleri gibi yaygın olarak kullanılan yöntemlerin yanı sıra, banka havalesi gibi alternatif ödeme seçenekleri de mevcuttur.</p>
+                                                 </div>
                                                 </div>
                                             </div>
                                             <div class="accordion-card faq-mb">
@@ -319,18 +276,17 @@
                                                     <div class="card-body">
                                                         <p class="text-size-18 text-left mb-0">Sistemimiz, farklı işletim sistemleri ve platformlarla uyumlu olacak şekilde tasarlanmıştır. </p>
                                                     </div>
+                                                   </div>
+                                                  </div>
+                                                 </div>
                                                 </div>
-                                            </div>
+                                               </div>
+                                             </div>
+                                              </div>
+                                           </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+</div>
 </section>
-<!-- Footer -->
 <section class="footer-section">
     <div class="container">
         <figure class="footer-sideshape mb-0">
@@ -341,15 +297,10 @@
                 <div class="col-lg-4 col-md-5 col-sm-6 col-12">
                     <a href="./index.php">
                         <figure class="footer-logo">
-                            <img src="./assets/images/logo.png" class="img-fluid" alt="">
+                            <img src="./assets/images/haslogo.png" class="img-fluid" alt="">
                         </figure>
                     </a>
                     <p class="text-size-16 footer-text text-white"></p>
-                    <ul class="list-unstyled mb-0 social-icons">
-                        <li class="circle"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li class="circle"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li class="circle"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    </ul>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-12 col-12 d-md-block d-none">
                     <div class="links">
@@ -359,7 +310,7 @@
                             <li><i class="fa-solid fa-angle-right"></i><a href="./about.html" class=" text-size-16 text text-decoration-none">Hakkımızda</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./service.html" class=" text-size-16 text text-decoration-none">Hizmetler</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./projects.php" class=" text-size-16 text text-decoration-none">Projeler</a></li>
-                            <li><i class="fa-solid fa-angle-right"></i><a href="./contact.html" class=" text-size-16 text text-decoration-none">Bize Ulaşın</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="./contact.php" class=" text-size-16 text text-decoration-none">Bize Ulaşın</a></li>
                         </ul>
                     </div>
                 </div>
@@ -369,11 +320,11 @@
                         <ul class="list-unstyled mb-0">
                             <li><i class="fa-solid fa-angle-right"></i><a href="./service.html" class=" text-size-16 text text-decoration-none">Nesne Takibi</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./faq.html" class=" text-size-16 text text-decoration-none">Referanslar</a></li>
-                            <li><i class="fa-solid fa-angle-right"></i><a href="./team.html" class=" text-size-16 text text-decoration-none">Takımımız</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i><a href="./market.php" class=" text-size-16 text text-decoration-none">Market</a></li>
                             <li><i class="fa-solid fa-angle-right"></i><a href="./faq.html" class=" text-size-16 text text-decoration-none">S.S.S</a></li>
                         </ul>
                     </div>
-                </div>
+                    </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-sm-block">
                     <div class="icon">
                         <h4 class="heading text-white">Bize Ulaşın</h4>
@@ -391,34 +342,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- <div id="fixed-form-container">
-            <div class="image">
-                <figure class="footer-image mb-0">
-                    <img src="./assets/images/footer-image.png" alt="" class="img-fluid">
-                </figure>
-            </div>
-            <div class="body">
-                <form id="contactpage1" method="POST" action="./contact-form.php">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Name:" name="name"> 
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Your Email:" name="emailid">
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" class="form-control" placeholder="Phone:" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form_style" placeholder="Message" rows="3" name="msg"></textarea>
-                    </div>
-                    <button type="submit" class="submit_now text-decoration-none">Submit Now</button>
-                </form>
-            </div>
-        </div> -->
-        
+</div>
 </section>
-<!-- Latest compiled JavaScript -->
 <script src="assets/js/jquery-3.6.0.min.js"> </script>
 <script src="assets/js/bootstrap.min.js"> </script>
 <script src="assets/js/video_link.js"></script>
