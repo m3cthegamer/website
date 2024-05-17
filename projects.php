@@ -127,12 +127,12 @@
                 </div>
             </div>
         </div>
-        <div class="row" data-aos="fade-up">
+        <div class="row" >
             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                 <div class="case-box overlay">
                     <figure class="image mb-0">
                         <a href="market.php">
-                            <img src="./assets/images/case-image1.png" alt="" class="img-fluid">
+                            <img src="./assets/images/case-image7.png" alt="" class="img-fluid">
                         </a>
                     </figure>
                     <div class="content">

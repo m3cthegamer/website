@@ -287,9 +287,9 @@
         <img src="./assets/images/choose-sideshape2.png" alt="" class="img-fluid">
     </figure>   
 </section>
-<!-- Case Study -->
 
-<!-- Testimonial -->
+
+
 <section class="testimonial-section">
     <div class="container">
         <div class="row position-relative">
@@ -353,42 +353,6 @@
             <img src="./assets/images/testimonial-sideimage.png" alt="" class="img-fluid">
         </figure>
     </div>
-    <!-- Partner -->
-    <div class="partner-section"> 
-        <div class="container">
-            <div class="partner" data-aos="fade-up">
-                <ul class="mb-0 list-unstyled">
-                    <li>
-                        <figure class="mb-0 partner1 img1">
-                            <img class="img-fluid" src="./assets/images/partner1.png" alt="">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="mb-0 partner1 partner2 img2">
-                            <img class="img-fluid" src="./assets/images/partner2.png" alt="">
-                        </figure>
-                    </li>
-                    <li class="img-mb">
-                        <figure class="mb-0 partner1 partner3 img3">
-                            <img class="img-fluid" src="./assets/images/partner3.png" alt="">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="mb-0 partner1 partner4 img4">
-                            <img class="img-fluid" src="./assets/images/partner4.png" alt="">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="mb-0 partner1 partner5 img5">
-                            <img class="img-fluid" src="./assets/images/partner5.png" alt="">
-                        </figure>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-<!--FAQ / Need section-->
 <section class="faq-section">
     <div class="container">
         <div class="row">

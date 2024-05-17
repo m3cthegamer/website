@@ -203,7 +203,7 @@
         <div class="row position-relative">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="position-relative">
-                    <a class="popup-vimeo" href="https://video-previews.elements.envatousercontent.com/h264-video-previews/d1c81f1e-849f-4d45-ae57-b61c2f5db34a/25628048.mp4">
+                    <a class="popup-vimeo" href="https://www.youtube.com/watch?v=CRFlFophFCw">
                         <figure class="mb-0 vediosession">
                             <img class="thumb img-fluid" style="cursor: pointer" src="./assets/images/image-vediosession.png" alt="">
                         </figure>
@@ -227,8 +227,8 @@
             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                 <div class="case-box overlay">
                     <figure class="image mb-0">
-                        <a href="iyzico/samples/initialize_checkout_form.php">
-                            <img src="./assets/images/case-image1.png" alt="" class="img-fluid">
+                        <a href="iyzico/samples/initialize_checkout_form_1.php">
+                            <img src="./assets/images/case-image8.png" alt="" class="img-fluid">
                         </a>
                     </figure>
                     <div class="content">
@@ -241,7 +241,8 @@
             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                 <div class="case-box overlay">
                     <figure class="image mb-0">
-                        <img src="./assets/images/case-image2.png" alt="" class="img-fluid">
+                    <a href="iyzico/samples/initialize_checkout_form_2.php">
+                        <img src="./assets/images/case-image10.png" alt="" class="img-fluid">
                     </figure>
                     <div class="content">
                         <span class="text-white">7 GÜN</span>
@@ -253,7 +254,8 @@
             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                 <div class="case-box overlay">
                     <figure class="image mb-0">
-                        <img src="./assets/images/case-image3.png" alt="" class="img-fluid">
+                    <a href="iyzico/samples/initialize_checkout_form_3.php">
+                        <img src="./assets/images/case-image9.png" alt="" class="img-fluid">
                     </figure>
                     <div class="content">
                         <span class="text-white">30 GÜN</span>

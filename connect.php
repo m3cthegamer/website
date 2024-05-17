@@ -1,3 +1,6 @@
+
+
+
 <?php
 // Formdan gelen verileri alma
 $username = $_POST['username'];
@@ -69,7 +72,6 @@ if ($stmt->execute()) {
     // UTF-8 karakter kodlaması ekleyelim
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-    // E-posta gönderme işlemi
     $mail_check = mail($email, $subject, $message, $headers);
 
     if ($mail_check) {
@@ -81,7 +83,11 @@ if ($stmt->execute()) {
     echo "Hata: " . $stmt->error;
 }
 
-// Bağlantıyı kapatma
+
+
+
+
+
 $stmt->close();
 $conn->close();
 ?>
