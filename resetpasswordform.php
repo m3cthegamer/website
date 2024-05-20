@@ -1,30 +1,26 @@
 <?php
-// Eğer form gönderildiyse
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Veritabanı bağlantısı
+
     $servername = "localhost";
     $db_username = "root";
     $db_password = "";
     $dbname = "bceweb";
 
-    // Formdan gelen verileri al
     $token = $_POST['token'];
     $new_password = $_POST['new_password'];
     $confirm_password = $_POST['confirm_password'];
 
-    // Yeni şifrelerin eşleşip eşleşmediğini kontrol et
     if($new_password !== $confirm_password) {
         echo "Yeni şifreler eşleşmiyor.";
         exit();
     }
 
-    // Veritabanına bağlanma
     $conn = new mysqli($servername, $db_username, $db_password, $dbname);
     if($conn->connect_error) {
         die("Veritabanına bağlantı hatası: " . $conn->connect_error);
     }
 
-    // Şifre sıfırlama bağlantısının geçerli olup olmadığını kontrol et
     $sql = "SELECT * FROM register WHERE reset_token = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("s", $token);
@@ -32,13 +28,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $stmt->get_result();
 
     if ($result->num_rows === 1) {
-        // Şifre sıfırlama bağlantısı geçerli ise, kullanıcının şifresini güncelle
+
         $row = $result->fetch_assoc();
         $user_id = $row['id'];
         
         $sql_update = "UPDATE register SET password = ? WHERE id = ?";
         $stmt_update = $conn->prepare($sql_update);
-        // Şifreyi hashleyerek güvenli hale getirebilirsiniz. Örneğin: $new_password_hashed = password_hash($new_password, PASSWORD_DEFAULT);
+        
         $stmt_update->bind_param("si", $new_password, $user_id);
         if ($stmt_update->execute()) {
             header("Location: index.php?=" . "&modal_id=passwordUpdated" );
@@ -49,7 +45,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Geçersiz şifre sıfırlama bağlantısı.";
     }
 
-    // Bağlantıyı kapatma
     $stmt->close();
     $stmt_update->close();
     $conn->close();
@@ -64,9 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Şifre Sıfırlama</title>
     <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/js/bootstrap.min.js">
-    <!-- Font Awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- StyleSheet link CSS -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">

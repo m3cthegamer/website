@@ -249,7 +249,6 @@
                      </div>
                    </div>
 </section>
-<!-- Choose -->
 <section class="choose-section">
     <div class="container">
     <figure class="choose-sideshape mb-0">
